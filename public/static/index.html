@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terminator</title>
+
+    <link href="https://ghostship.codesalvageon.repl.co/styles/style.css" rel="stylesheet">
+    <link href="https://www.freepngimg.com/thumb/terminator/21096-3-terminator-image-thumb.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <pre>
+      <div id="text1">
+      </div>
+    </pre>
+    <div id="credentials" class="center">
+      <h1 onmouseover="textFlicker()" id="flicker1">Terminator: Explorer</h1>
+      <br/>
+      <br/>
+      <button class="index-button" id="create-account">Create Account</button>
+      <button class="index-button" id="login-account">Login</button>
+      <br/>
+      <button id="discord">Join Our Discord Server!</button>
+    </div>
+    <div id="register" class="center">
+      <button id="register-back">Back</button>
+      <form id="register-form">
+        <br/>
+        <h1>Create An Account</h1>
+        <h4 class="error" id="register-error"></h4>
+        <h3>CODENAME: <input type="text" id="codename" maxlength="25" autofill="off" autocomplete="chrome-off" required/></h3>
+        <h3>PASSCODE: <input type="password" id="passcode" maxlength="25" autofill="off" autocomplete="chrome-off" required/></h3>
+        <h3>TechCom Unit: <select id="techcom_unit" required>
+          <option value="la">LA Branch</option>
+          <option value="sf">SF Branch</option>
+          <option value="ops">Special Ops Branch</option>
+        </select></h3>
+        <button>CREATE IDENTITY</button>
+      </form>
+    </div>
+    <div id="login" class="center">
+      <button id="login-back">Back</button>
+      <form id="login-form">
+        <br/>
+        <h1>Login to an Account</h1>
+        <h4 class="error" id="login-error"></h4>
+        <h3>CODENAME: <input type="text" id="login_codename" maxlength="25" autocomplete="chrome-off" required/></h3>
+        <h3>PASSCODE: <input type="password" id="login_password" maxlength="25" autocomplete="chrome-off" required/></h3>
+        <button>LOGIN TO IDENTITY</button>
+      </form>
+    </div>
+    <div id="main-menu" align="left">
+      <h1>Terminator: Explorer</h1>
+      <button id="view-techcom">View Your TechCom Unit's Progress</button>
+      <br/>
+      <button id="play">Search for rogue terminators(PLAY)</button>
+      <br/>
+      <button id="rogue-gallery">View Rogue Gallery</button>
+      <br/>
+      <button id="logout">Logout</button>
+    </div>
+    <div id="techcom-progress" class="center">
+      <button id="techcom-back">Back</button>
+      <br/>
+      <h1>Your TechCom Unit's Progress: </h1>
+      <h2 id="techcom-id">TechCom Unit: </h2>
+      <h3 id="terminators-destroyed">Terminators destroyed: </h3>
+    </div>
+    <div id="rogues-gallery" class="center">
+      <button id="rogues-back">Back</button>
+      <br/>
+      <h1 id="terminator-name">T-600 Terminator</h1>
+      <div id="terminator-switch"><img src="https://terminator.codesalvageon.repl.co/images/t600.png" /></div>
+      <br/>
+      <button id="rogues-next">Next</button>
+    </div>
+    <div id="game-load-screen" align="left">
+      <h1>Tips</h1>
+      <p>
+        <h3>
+          When you see glowing eyes in the main hallway, shoot in their direction using your rifle. Your rifle has limited ammunition, so use it wisely. 
+          Objective: Charge Up the Building EMP to 100% and fire it.
+        </h3>
+      </p>
+      <button id="game-start">Player One READY</button>
+    </div>
+    <div id="game-main-hallway" class="center">
+      <h2 id="rifle-ammo-count">Rifle AMMO: 5</h2>
+      <h2 id="emp-charge-count">EMP CHARGED: 0%</h2>
+      <button id="return-main-hallway">View Main Hallway</button>
+      <br/>
+      <img src="https://terminator.codesalvageon.repl.co/images/hallway1.png" id="hallway"/>
+      <br/>
+      <button id="shoot-rifle">Shoot Rifle</button>
+      <br/>
+      <button id="charge-up">Charge up Building EMP</button>
+    </div>
+    <img src="https://terminator.codesalvageon.repl.co/images/t600.jpg" class="center" id="t600-jumpscare"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://terminator.codesalvageon.repl.co/scripts/script.js"></script>
+    <script src="https://terminator.codesalvageon.repl.co/scripts/buttonclick.js"></script>
+    <script src="https://terminator.codesalvageon.repl.co/scripts/forms.js"></script>
+
+    <audio src="https://terminator.codesalvageon.repl.co/sounds/gunshot.mp3" id="gunshot"></audio>
+    <audio src="https://terminator.codesalvageon.repl.co/sounds/t600.mp3" id="stomping"></audio>
+    <audio src="https://terminator.codesalvageon.repl.co/sounds/shotgun.mp3" id="shotgun"></audio>
+    <audio src="https://terminator.codesalvageon.repl.co/sounds/ambience.mp3" id="ambience" loop></audio>
+    <audio src="https://terminator.codesalvageon.repl.co/sounds/jumpscare.mp3" id="jumpscare"></audio>
+  </body>
+</html>

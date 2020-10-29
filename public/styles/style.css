@@ -1,0 +1,56 @@
+body {
+  color: greenyellow;
+  background-size: cover;
+  background-color: black;
+  font-family: 'Inconsolata', monospace;
+}
+
+button {
+  width: 500px;
+  padding: 10px;
+  color: greenyellow;
+  background-color: black;
+  border: 2px solid greenyellow;
+  font-family: 'Inconsolata', monospace;
+}
+
+button:hover {
+  color: black;
+  background-color: red;
+  border: 2px solid black;
+}
+
+input {
+  color: greenyellow;
+  background-color: black;
+  border: 2px solid greenyellow;
+  font-family: 'Inconsolata', monospace;
+}
+
+select {
+  color: greenyellow;
+  background-color: black;
+  border: 2px solid greenyellow;
+  font-family: 'Inconsolata', monospace;
+}
+
+.center {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.error {
+  color: red;
+}
+
+#text1 {
+  top: 5px;
+  left: 0px;
+  position: fixed;
+}
